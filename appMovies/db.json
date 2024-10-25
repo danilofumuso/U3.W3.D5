@@ -2,19 +2,19 @@
   "users": [
     {
       "email": "danilo@email.it",
-      "password": "$2a$10$h91pXqjVX//gRhHpceXgG.431t4dNx2SzuSY93tukMiHQnJCCk8LG",
+      "password": "$2a$10$ZJp204nDPFAJHoH83ssAzOgPNRZwL/H0xLaPKTxWpqgDo0gxMcE1u",
       "name": "Danilo",
       "id": 1
     },
     {
       "email": "mario@email.it",
-      "password": "$2a$10$0Mm.FBar7rVq7xfS1qXsnOh1Fn/EUUrWSBHMtIt7aHh7Z30zVp9Ty",
+      "password": "$2a$10$CaxT.m90VfwTqKQQ9W65nuglyGmgxUORNgZChZZvrnZlwA8um0/M6",
       "name": "Mario",
       "id": 2
     },
     {
       "email": "luigi@email.it",
-      "password": "$2a$10$hz7yz306BlVrOMgrsqUW1e86DzoXxNwFQDrUl3RWSTfiTL3CovCGy",
+      "password": "$2a$10$i6neAfUaYmlP0cpVNhMeJ.pfVSqOdWDSvC5rBeickwNz9I.T1Uude",
       "name": "Luigi",
       "id": 3
     }
@@ -181,5 +181,54 @@
       "director": "Duncan Jones"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "movie": {
+        "id": 1,
+        "title": "Blade Runner",
+        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
+        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
+        "year": 1982,
+        "director": "Ridley Scott"
+      },
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "movie": {
+        "id": 4,
+        "title": "Inception",
+        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
+        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
+        "year": 2010,
+        "director": "Christopher Nolan"
+      },
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "movie": {
+        "id": 5,
+        "title": "2001: A Space Odyssey",
+        "imageUrl": "https://musicart.xboxlive.com/7/0ba11100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
+        "description": "Un viaggio epico attraverso il tempo e lo spazio che esplora l'evoluzione e il destino dell'umanità.",
+        "year": 1968,
+        "director": "Stanley Kubrick"
+      },
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "movie": {
+        "id": 1,
+        "title": "Blade Runner",
+        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
+        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
+        "year": 1982,
+        "director": "Ridley Scott"
+      },
+      "userId": 1,
+      "id": 4
+    }
+  ]
 }
