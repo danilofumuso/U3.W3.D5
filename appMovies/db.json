@@ -2,19 +2,19 @@
   "users": [
     {
       "email": "danilo@email.it",
-      "password": "$2a$10$TjQySrPjf8ZWxemtKg4gYue3x.qBOzFsNnftSY5oZpV/c.NME6aDq",
+      "password": "$2a$10$h91pXqjVX//gRhHpceXgG.431t4dNx2SzuSY93tukMiHQnJCCk8LG",
       "name": "Danilo",
       "id": 1
     },
     {
       "email": "mario@email.it",
-      "password": "$2a$10$JlmU/U.EzQuX3S.q4oqu0e1J7B1J3vD4VXDVFtOa4D4aH2jE3ZWLK",
+      "password": "$2a$10$0Mm.FBar7rVq7xfS1qXsnOh1Fn/EUUrWSBHMtIt7aHh7Z30zVp9Ty",
       "name": "Mario",
       "id": 2
     },
     {
       "email": "luigi@email.it",
-      "password": "$2a$10$LVQ9fyLkQapmFzEKJeBPxuzapmSWcASwlEYZTdqTfvYWNbd6VfOsa",
+      "password": "$2a$10$hz7yz306BlVrOMgrsqUW1e86DzoXxNwFQDrUl3RWSTfiTL3CovCGy",
       "name": "Luigi",
       "id": 3
     }
@@ -181,198 +181,5 @@
       "director": "Duncan Jones"
     }
   ],
-  "favorites": [
-    {
-      "movie": {
-        "id": 1,
-        "title": "Blade Runner",
-        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
-        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
-        "year": 1982,
-        "director": "Ridley Scott"
-      },
-      "userId": 1,
-      "id": 1
-    },
-    {
-      "movie": {
-        "id": 2,
-        "title": "Interstellar",
-        "imageUrl": "https://m.media-amazon.com/images/I/81sK-HeMjXL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Un gruppo di astronauti viaggia attraverso un wormhole alla ricerca di una nuova casa per l'umanità.",
-        "year": 2014,
-        "director": "Christopher Nolan"
-      },
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 1,
-      "id": 3
-    },
-    {
-      "movie": {
-        "id": 1,
-        "title": "Blade Runner",
-        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
-        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
-        "year": 1982,
-        "director": "Ridley Scott"
-      },
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "movie": {
-        "id": 2,
-        "title": "Interstellar",
-        "imageUrl": "https://m.media-amazon.com/images/I/81sK-HeMjXL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Un gruppo di astronauti viaggia attraverso un wormhole alla ricerca di una nuova casa per l'umanità.",
-        "year": 2014,
-        "director": "Christopher Nolan"
-      },
-      "userId": 1,
-      "id": 5
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 1,
-      "id": 6
-    },
-    {
-      "movie": {
-        "id": 1,
-        "title": "Blade Runner",
-        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
-        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
-        "year": 1982,
-        "director": "Ridley Scott"
-      },
-      "userId": 2,
-      "id": 7
-    },
-    {
-      "movie": {
-        "id": 1,
-        "title": "Blade Runner",
-        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
-        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
-        "year": 1982,
-        "director": "Ridley Scott"
-      },
-      "userId": 1,
-      "id": 8
-    },
-    {
-      "movie": {
-        "id": 2,
-        "title": "Interstellar",
-        "imageUrl": "https://m.media-amazon.com/images/I/81sK-HeMjXL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Un gruppo di astronauti viaggia attraverso un wormhole alla ricerca di una nuova casa per l'umanità.",
-        "year": 2014,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 9
-    },
-    {
-      "movie": {
-        "id": 2,
-        "title": "Interstellar",
-        "imageUrl": "https://m.media-amazon.com/images/I/81sK-HeMjXL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Un gruppo di astronauti viaggia attraverso un wormhole alla ricerca di una nuova casa per l'umanità.",
-        "year": 2014,
-        "director": "Christopher Nolan"
-      },
-      "userId": 1,
-      "id": 10
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 11
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 1,
-      "id": 12
-    },
-    {
-      "movie": {
-        "id": 2,
-        "title": "Interstellar",
-        "imageUrl": "https://m.media-amazon.com/images/I/81sK-HeMjXL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Un gruppo di astronauti viaggia attraverso un wormhole alla ricerca di una nuova casa per l'umanità.",
-        "year": 2014,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 13
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 14
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 15
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 16
-    }
-  ]
+  "favorites": []
 }

@@ -20,4 +20,8 @@ export class FavoritesService {
   removeFromFavorites(favoriteId: number): Observable<void> {
     return this.http.delete<void>(`${this.favoritesUrl}/${favoriteId}`);
   }
+
+  getFavoritesByUserId(userId: number): Observable<iFavorite[]> {
+    return this.http.get<iFavorite[]>(`${this.favoritesUrl}?userId=${userId}`);
+  }
 }
