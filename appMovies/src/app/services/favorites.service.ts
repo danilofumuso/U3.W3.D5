@@ -1,3 +1,4 @@
+import { iFavorite } from './../interfaces/i-favorite';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, map, tap } from 'rxjs';
@@ -21,7 +22,21 @@ export class FavoritesService {
     return this.http.delete<void>(`${this.favoritesUrl}/${favoriteId}`);
   }
 
-  getFavoritesByUserId(userId: number): Observable<iFavorite[]> {
+  getUserFavorites(userId: number): Observable<iFavorite[]> {
     return this.http.get<iFavorite[]>(`${this.favoritesUrl}?userId=${userId}`);
+  }
+
+  checkFavoriteMoviesOfUser(userId: number, movieId: number): boolean {
+    let userFavorites: iFavorite[] = [];
+
+    this.getUserFavorites(userId).subscribe(
+      (movies) => (userFavorites = movies)
+    );
+
+    userFavorites.filter((movie) => movie.id === movieId);
+
+    if (userFavorites.length > 0) return false;
+
+    return true;
   }
 }
