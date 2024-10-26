@@ -18,7 +18,7 @@
         </li>
       </ul>
 
-      <div class="text-end me-3 mb-3 mb-lg-0">
+      <div class="text-end mb-3 mb-lg-0">
         <a
           *ngIf="!isLoggedIn"
           routerLink="/auth/login"
@@ -42,16 +42,10 @@
         </button>
 
         <ng-template #content let-offcanvas>
-          <div class="offcanvas-header">
+          <div class="offcanvas-header text-white">
             <h4 class="offcanvas-title">Your Friends</h4>
-            <button
-              type="button"
-              class="btn rounded-5"
-              aria-label="Close"
-              (click)="offcanvas.dismiss('Cross click')"
-            ></button>
           </div>
-          <div class="offcanvas-body">
+          <div class="offcanvas-body text-white">
             <p *ngFor="let user of users">{{ user.name }} - {{ user.email }}</p>
             <div class="text-end">
               <button
@@ -71,7 +65,7 @@
           (click)="openEnd(content)"
           (click)="clickToGetFriends()"
         >
-          Friends Online
+          Friends
         </button>
       </div>
     </div>

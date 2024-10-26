@@ -1,4 +1,14 @@
+.body {
+  background-color: rgb(11, 61, 61);
+  color: white;
+}
+
 ul {
+  li {
+    background-color: transparent;
+    color: white;
+  }
+
   img {
     max-width: 120px;
     max-height: 200px;

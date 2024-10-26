@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { iMovie } from '../../interfaces/i-movie';
 import { MoviesService } from '../../services/movies.service';
 import { AuthService } from '../../auth/auth.service';
-import { map, take } from 'rxjs';
+import { debounce, debounceTime, map, take } from 'rxjs';
 import { FavoritesService } from '../../services/favorites.service';
 
 @Component({
@@ -26,20 +26,34 @@ export class HomeComponent implements OnInit {
   clickLike(movie: iMovie) {
     this.authSvc.user$
       .pipe(
-        map((user) => user?.id),
-        take(1) // Completa la sottoscrizione dopo una sola emissione
+        take(1),
+        map((user) => user?.id)
       )
       .subscribe((userId) => {
-        if (userId) {
-          if (this.favoritesSvc.checkFavoriteMoviesOfUser(userId, movie.id)) {
-            const newFavorite = {
-              movie,
-              userId,
-            };
+        if (!userId) return;
 
-            this.favoritesSvc.addToFavorites(newFavorite).subscribe();
-          }
-        }
+        this.favoritesSvc
+          .getUserFavorites(userId)
+          .pipe(
+            take(1),
+            map((favorites) =>
+              favorites.find((fav) => fav.movie.id === movie.id)
+            )
+          )
+          .subscribe((existingFavorite) => {
+            if (!existingFavorite) {
+              //se non esiste creo un oggetto e lo posto nei preferiti!
+              const newFavorite = {
+                movie,
+                userId,
+              };
+
+              this.favoritesSvc
+                .addToFavorites(newFavorite)
+                .pipe(take(1))
+                .subscribe();
+            }
+          });
       });
   }
 }
