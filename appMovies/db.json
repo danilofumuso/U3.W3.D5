@@ -256,27 +256,75 @@
     },
     {
       "movie": {
-        "id": 20,
-        "title": "Moon",
-        "imageUrl": "https://lh4.googleusercontent.com/proxy/sAZr3fdPVqk15UTf5F0huiEvQQEWtM7quZB270QSva6O2JKuDpRd-YOYCoM8Sy8lx2Hy7bI56I-cmeOLyuDUOoA",
-        "description": "Un astronauta in una missione solitaria su una base lunare scopre una scioccante verità sulla sua vita.",
-        "year": 2009,
-        "director": "Duncan Jones"
+        "id": 3,
+        "title": "The Matrix",
+        "imageUrl": "https://i.ebayimg.com/images/g/8ykAAOSwg-BfTLqg/s-l1200.jpg",
+        "description": "Un hacker scopre la verità dietro una realtà simulata controllata da macchine senzienti.",
+        "year": 1999,
+        "director": "The Wachowskis"
       },
       "userId": 1,
       "id": 6
     },
     {
       "movie": {
-        "id": 18,
-        "title": "Ex Machina",
-        "imageUrl": "https://m.media-amazon.com/images/I/71axeR3ChuL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Un programmatore viene coinvolto in un esperimento che coinvolge un'intelligenza artificiale avanzata.",
-        "year": 2014,
-        "director": "Alex Garland"
+        "id": 6,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "imageUrl": "https://m.media-amazon.com/images/I/612h-jwI+EL._AC_UF1000,1000_QL80_.jpg",
+        "description": "Luke Skywalker si unisce alla Ribellione per combattere l'Impero Galattico.",
+        "year": 1977,
+        "director": "George Lucas"
       },
       "userId": 1,
       "id": 7
+    },
+    {
+      "movie": {
+        "id": 1,
+        "title": "Blade Runner",
+        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
+        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
+        "year": 1982,
+        "director": "Ridley Scott"
+      },
+      "userId": 3,
+      "id": 8
+    },
+    {
+      "movie": {
+        "id": 6,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "imageUrl": "https://m.media-amazon.com/images/I/612h-jwI+EL._AC_UF1000,1000_QL80_.jpg",
+        "description": "Luke Skywalker si unisce alla Ribellione per combattere l'Impero Galattico.",
+        "year": 1977,
+        "director": "George Lucas"
+      },
+      "userId": 3,
+      "id": 9
+    },
+    {
+      "movie": {
+        "id": 7,
+        "title": "Star Trek",
+        "imageUrl": "https://m.media-amazon.com/images/I/615ZaopZp8L._AC_UF894,1000_QL80_.jpg",
+        "description": "L'equipaggio della USS Enterprise intraprende una missione epica per salvare la Federazione.",
+        "year": 2009,
+        "director": "J.J. Abrams"
+      },
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "movie": {
+        "id": 8,
+        "title": "The Terminator",
+        "imageUrl": "https://www.sentireascoltare.com/wp-content/uploads/2024/01/Terminator.jpg",
+        "description": "Un cyborg assassino viene mandato indietro nel tempo per uccidere la madre del futuro leader della resistenza umana.",
+        "year": 1984,
+        "director": "James Cameron"
+      },
+      "userId": 3,
+      "id": 11
     }
   ]
 }

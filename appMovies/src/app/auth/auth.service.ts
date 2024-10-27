@@ -27,7 +27,6 @@ export class AuthService {
   isLoggedIn$ = this.authSubject$
     .asObservable()
     .pipe(map((accessData) => !!accessData));
-  //serve per la verifica, capta la presenza(o meno) dello user e mi restituisce un bool (false se il subject riceve null)
 
   autoLogoutTimer: any;
 
@@ -36,62 +35,49 @@ export class AuthService {
   }
 
   register(newUser: Partial<iUser>) {
-    return this.http.post<iAccessData>(this.registerUrl, newUser); //metodo per registrare un nuovo user
+    return this.http.post<iAccessData>(this.registerUrl, newUser);
   }
 
   login(authData: iLoginRequest) {
     return this.http.post<iAccessData>(this.loginUrl, authData).pipe(
       tap((accessData) => {
-        this.authSubject$.next(accessData); //invio lo user al subject
+        this.authSubject$.next(accessData);
         localStorage.setItem('accessData', JSON.stringify(accessData));
-        //salvo lo user nel L.S. per poterlo recuperare se si ricarica la pagina
 
-        //Recupero la data di scadenza del token
         const expDate = this.jwtHelper.getTokenExpirationDate(
           accessData.accessToken
         );
 
-        //se c'è un errore con la data blocca la funzione
         if (!expDate) return;
 
-        //Avvio il logout automatico.
         this.autoLogout(expDate);
       })
     );
   }
 
   logout() {
-    this.authSubject$.next(null); //comunico al behaviorsubject che il valore da propagare è null
-    localStorage.removeItem('accessData'); //elimino i dati salvati in localstorage
-    this.router.navigate(['/auth/login']); //redirect al login
+    this.authSubject$.next(null);
+    localStorage.removeItem('accessData');
+    this.router.navigate(['/auth/login']);
   }
 
   autoLogout(expDate: Date) {
-    // clearTimeout(this.autoLogoutTimer); //azzera il timeout prima di lanciarlo
-    const expMs = expDate.getTime() - new Date().getTime(); //sottraggo i ms della data attuale da quelli della data del jwt
+    const expMs = expDate.getTime() - new Date().getTime();
 
-    this.autoLogoutTimer = setTimeout(() => {
-      //avvio un timer che fa logout allo scadere del tempo
-      this.logout();
-    }, expMs);
+    this.autoLogoutTimer = setTimeout(() => {}, expMs);
   }
 
-  //metodo che controlla al reload di pagina se l'utente è loggato e se il jwt è scaduto
-
   restoreUser() {
-    const userJson: string | null = localStorage.getItem('accessData'); //recupero i dati di accesso
-    if (!userJson) return; //se i dati non ci sono blocco la funzione
-
-    const accessData: iAccessData = JSON.parse(userJson); //i dati ci sono, quindi converto la stringa(che conteneva un json) in oggetto
+    const userJson: string | null = localStorage.getItem('accessData');
+    if (!userJson) return;
+    const accessData: iAccessData = JSON.parse(userJson);
 
     if (this.jwtHelper.isTokenExpired(accessData.accessToken)) {
-      //ora controllo se il token è scaduto, se lo è fermiamo la funzione ed eliminamo i dati scaduti dal localStorage
       localStorage.removeItem('accessData');
       return;
     }
 
-    //se nessun return viene eseguito proseguo
-    this.authSubject$.next(accessData); //invio i dati dell'utente al behaviorsubject
+    this.authSubject$.next(accessData);
   }
 
   getAllUsers(): Observable<iUser[]> {

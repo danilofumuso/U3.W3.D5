@@ -42,7 +42,6 @@ export class HomeComponent implements OnInit {
           )
           .subscribe((existingFavorite) => {
             if (!existingFavorite) {
-              //se non esiste creo un oggetto e lo posto nei preferiti!
               const newFavorite = {
                 movie,
                 userId,
