@@ -1,0 +1,10 @@
+.card {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+
+  .img-fluid {
+    cursor: pointer;
+    max-height: 350px;
+    border: 0.5px solid white;
+  }
+}

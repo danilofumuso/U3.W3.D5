@@ -4,17 +4,18 @@ import { AuthGuard } from './auth/guards/auth.guard';
 import { GuestGuard } from './auth/guards/guest.guard';
 
 const routes: Routes = [
-  {
-    path: 'auth',
-    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
-    canActivate: [GuestGuard],
-    canActivateChild: [GuestGuard],
-  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
     loadChildren: () =>
       import('./pages/home/home.module').then((m) => m.HomeModule),
     canActivate: [AuthGuard],
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./auth/auth.module').then((m) => m.AuthModule),
+    canActivate: [GuestGuard],
+    canActivateChild: [GuestGuard],
   },
   {
     path: 'profilePage',

@@ -2,21 +2,33 @@
   "users": [
     {
       "email": "danilo@email.it",
-      "password": "$2a$10$ZJp204nDPFAJHoH83ssAzOgPNRZwL/H0xLaPKTxWpqgDo0gxMcE1u",
-      "name": "Danilo",
+      "password": "$2a$10$rXQ9Za0Y5Ink2jDxFcu3KeT20ZRE4eUmlZTTctk.xTqkOJuzEPdAi",
+      "name": "Danilo ",
       "id": 1
     },
     {
-      "email": "mario@email.it",
-      "password": "$2a$10$CaxT.m90VfwTqKQQ9W65nuglyGmgxUORNgZChZZvrnZlwA8um0/M6",
-      "name": "Mario",
+      "email": "michele@email.it",
+      "password": "$2a$10$7yBPGApdlRmxyYJmRsbm5eDo14ia9wZLLQ/ykd/5ynVWk7DS3yvUW",
+      "name": "Michele",
       "id": 2
     },
     {
-      "email": "luigi@email.it",
-      "password": "$2a$10$i6neAfUaYmlP0cpVNhMeJ.pfVSqOdWDSvC5rBeickwNz9I.T1Uude",
-      "name": "Luigi",
+      "email": "federico@email.it",
+      "password": "$2a$10$nhaIFPYy6s.TWgEOVuK1.ebnzOekaVf3t73BbBzWSeHvCfXtJ/QwS",
+      "name": "Federico",
       "id": 3
+    },
+    {
+      "email": "riccardo@email.it",
+      "password": "$2a$10$I.97DmLE2aVPc9.KbMREsOmSlgzAMYhC/XjTQahCPppK6qJZlUAri",
+      "name": "Riccardo",
+      "id": 4
+    },
+    {
+      "email": "mario@email.it",
+      "password": "$2a$10$z2ef3e9EhJX.7JGjfOZg.ORj2a0U9JyQm4mB07G59z.HzOMJwqeLW",
+      "name": "Mario",
+      "id": 5
     }
   ],
   "movies-popular": [
@@ -184,15 +196,39 @@
   "favorites": [
     {
       "movie": {
-        "id": 1,
-        "title": "Blade Runner",
-        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
-        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
-        "year": 1982,
-        "director": "Ridley Scott"
+        "id": 3,
+        "title": "The Matrix",
+        "imageUrl": "https://i.ebayimg.com/images/g/8ykAAOSwg-BfTLqg/s-l1200.jpg",
+        "description": "Un hacker scopre la verità dietro una realtà simulata controllata da macchine senzienti.",
+        "year": 1999,
+        "director": "The Wachowskis"
       },
-      "userId": 1,
+      "userId": 4,
       "id": 1
+    },
+    {
+      "movie": {
+        "id": 5,
+        "title": "2001: A Space Odyssey",
+        "imageUrl": "https://musicart.xboxlive.com/7/0ba11100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
+        "description": "Un viaggio epico attraverso il tempo e lo spazio che esplora l'evoluzione e il destino dell'umanità.",
+        "year": 1968,
+        "director": "Stanley Kubrick"
+      },
+      "userId": 4,
+      "id": 2
+    },
+    {
+      "movie": {
+        "id": 7,
+        "title": "Star Trek",
+        "imageUrl": "https://m.media-amazon.com/images/I/615ZaopZp8L._AC_UF894,1000_QL80_.jpg",
+        "description": "L'equipaggio della USS Enterprise intraprende una missione epica per salvare la Federazione.",
+        "year": 2009,
+        "director": "J.J. Abrams"
+      },
+      "userId": 4,
+      "id": 3
     },
     {
       "movie": {
@@ -204,7 +240,7 @@
         "director": "Christopher Nolan"
       },
       "userId": 1,
-      "id": 2
+      "id": 4
     },
     {
       "movie": {
@@ -216,31 +252,19 @@
         "director": "Christopher Nolan"
       },
       "userId": 1,
-      "id": 3
-    },
-    {
-      "movie": {
-        "id": 5,
-        "title": "2001: A Space Odyssey",
-        "imageUrl": "https://musicart.xboxlive.com/7/0ba11100-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080",
-        "description": "Un viaggio epico attraverso il tempo e lo spazio che esplora l'evoluzione e il destino dell'umanità.",
-        "year": 1968,
-        "director": "Stanley Kubrick"
-      },
-      "userId": 1,
-      "id": 4
-    },
-    {
-      "movie": {
-        "id": 6,
-        "title": "Star Wars: Episode IV - A New Hope",
-        "imageUrl": "https://m.media-amazon.com/images/I/612h-jwI+EL._AC_UF1000,1000_QL80_.jpg",
-        "description": "Luke Skywalker si unisce alla Ribellione per combattere l'Impero Galattico.",
-        "year": 1977,
-        "director": "George Lucas"
-      },
-      "userId": 1,
       "id": 5
+    },
+    {
+      "movie": {
+        "id": 20,
+        "title": "Moon",
+        "imageUrl": "https://lh4.googleusercontent.com/proxy/sAZr3fdPVqk15UTf5F0huiEvQQEWtM7quZB270QSva6O2JKuDpRd-YOYCoM8Sy8lx2Hy7bI56I-cmeOLyuDUOoA",
+        "description": "Un astronauta in una missione solitaria su una base lunare scopre una scioccante verità sulla sua vita.",
+        "year": 2009,
+        "director": "Duncan Jones"
+      },
+      "userId": 1,
+      "id": 6
     },
     {
       "movie": {
@@ -252,127 +276,7 @@
         "director": "Alex Garland"
       },
       "userId": 1,
-      "id": 6
-    },
-    {
-      "movie": {
-        "id": 19,
-        "title": "Total Recall",
-        "imageUrl": "https://c8.alamy.com/comp/BKF4GP/total-recall-1990-poster-BKF4GP.jpg",
-        "description": "Un operaio scopre che la sua vita potrebbe essere una bugia e cerca di svelare la verità su Marte.",
-        "year": 1990,
-        "director": "Paul Verhoeven"
-      },
-      "userId": 1,
       "id": 7
-    },
-    {
-      "movie": {
-        "id": 20,
-        "title": "Moon",
-        "imageUrl": "https://lh4.googleusercontent.com/proxy/sAZr3fdPVqk15UTf5F0huiEvQQEWtM7quZB270QSva6O2JKuDpRd-YOYCoM8Sy8lx2Hy7bI56I-cmeOLyuDUOoA",
-        "description": "Un astronauta in una missione solitaria su una base lunare scopre una scioccante verità sulla sua vita.",
-        "year": 2009,
-        "director": "Duncan Jones"
-      },
-      "userId": 1,
-      "id": 8
-    },
-    {
-      "movie": {
-        "id": 1,
-        "title": "Blade Runner",
-        "imageUrl": "https://c8.alamy.com/compit/2k41x6r/guida-lama-1982-poster-del-film-blade-runner-harrison-ford-2k41x6r.jpg",
-        "description": "Un cacciatore di replicanti cerca di ritirare modelli avanzati di androidi in un futuro distopico.",
-        "year": 1982,
-        "director": "Ridley Scott"
-      },
-      "userId": 2,
-      "id": 9
-    },
-    {
-      "movie": {
-        "id": 4,
-        "title": "Inception",
-        "imageUrl": "https://i.ebayimg.com/images/g/rq8AAOSwuwRYLfXa/s-l1200.jpg",
-        "description": "Un ladro professionista si infiltra nei sogni delle persone per rubare informazioni preziose.",
-        "year": 2010,
-        "director": "Christopher Nolan"
-      },
-      "userId": 2,
-      "id": 10
-    },
-    {
-      "movie": {
-        "id": 7,
-        "title": "Star Trek",
-        "imageUrl": "https://m.media-amazon.com/images/I/615ZaopZp8L._AC_UF894,1000_QL80_.jpg",
-        "description": "L'equipaggio della USS Enterprise intraprende una missione epica per salvare la Federazione.",
-        "year": 2009,
-        "director": "J.J. Abrams"
-      },
-      "userId": 2,
-      "id": 11
-    },
-    {
-      "movie": {
-        "id": 12,
-        "title": "Arrival",
-        "imageUrl": "https://mr.comingsoon.it/imgdb/locandine/big/53453.jpg",
-        "description": "Una linguista cerca di comunicare con una specie aliena che arriva sulla Terra.",
-        "year": 2016,
-        "director": "Denis Villeneuve"
-      },
-      "userId": 2,
-      "id": 12
-    },
-    {
-      "movie": {
-        "id": 11,
-        "title": "Dune",
-        "imageUrl": "https://m.media-amazon.com/images/I/61CRq2R6i4L._AC_UF894,1000_QL80_.jpg",
-        "description": "Un giovane nobile cerca di salvare il suo popolo e il suo pianeta in un futuro intergalattico pieno di intrighi.",
-        "year": 2021,
-        "director": "Denis Villeneuve"
-      },
-      "userId": 2,
-      "id": 13
-    },
-    {
-      "movie": {
-        "id": 20,
-        "title": "Moon",
-        "imageUrl": "https://lh4.googleusercontent.com/proxy/sAZr3fdPVqk15UTf5F0huiEvQQEWtM7quZB270QSva6O2JKuDpRd-YOYCoM8Sy8lx2Hy7bI56I-cmeOLyuDUOoA",
-        "description": "Un astronauta in una missione solitaria su una base lunare scopre una scioccante verità sulla sua vita.",
-        "year": 2009,
-        "director": "Duncan Jones"
-      },
-      "userId": 2,
-      "id": 14
-    },
-    {
-      "movie": {
-        "id": 3,
-        "title": "The Matrix",
-        "imageUrl": "https://i.ebayimg.com/images/g/8ykAAOSwg-BfTLqg/s-l1200.jpg",
-        "description": "Un hacker scopre la verità dietro una realtà simulata controllata da macchine senzienti.",
-        "year": 1999,
-        "director": "The Wachowskis"
-      },
-      "userId": 1,
-      "id": 15
-    },
-    {
-      "movie": {
-        "id": 8,
-        "title": "The Terminator",
-        "imageUrl": "https://www.sentireascoltare.com/wp-content/uploads/2024/01/Terminator.jpg",
-        "description": "Un cyborg assassino viene mandato indietro nel tempo per uccidere la madre del futuro leader della resistenza umana.",
-        "year": 1984,
-        "director": "James Cameron"
-      },
-      "userId": 1,
-      "id": 16
     }
   ]
 }

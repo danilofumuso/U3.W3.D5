@@ -3,10 +3,12 @@ img {
 }
 
 .offcanvas-header {
-  height: 60px;
-  background-color: #212529;
+  height: 61px;
+  background-color: black;
+  border-bottom: 1px solid white;
 }
 
 .offcanvas-body {
-  background-color: rgb(11, 61, 61);
+  padding-top: 2rem;
+  background-image: url(https://img.freepik.com/premium-vector/tropical-palm-leaves-jungle-leaves-seamless-floral-pattern-black-background-vector_144350-412.jpg);
 }

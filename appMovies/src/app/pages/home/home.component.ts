@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { iMovie } from '../../interfaces/i-movie';
 import { MoviesService } from '../../services/movies.service';
 import { AuthService } from '../../auth/auth.service';
-import { debounce, debounceTime, map, take } from 'rxjs';
+import { map, take } from 'rxjs';
 import { FavoritesService } from '../../services/favorites.service';
 
 @Component({

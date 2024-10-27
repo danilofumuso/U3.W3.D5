@@ -43,7 +43,11 @@ export class ProfilePageComponent implements OnInit {
       });
   }
 
-  deleteFavorite() {
-    this.favoritesSvc.removeFromFavorites();
+  deleteFavorite(favorite: iFavorite) {
+    this.favoritesSvc.removeFromFavorites(favorite).subscribe(() => {
+      this.favorites = this.favorites.filter(
+        (fav) => fav.movie.id !== favorite.movie.id
+      );
+    });
   }
 }

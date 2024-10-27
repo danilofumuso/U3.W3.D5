@@ -1,34 +1,35 @@
-<div class="body">
-  <div class="container">
-    <div class="row justify-content-start">
-      <h3 class="text-start my-3 display-5">I Nostri Titoli</h3>
-      <div class="col-12 col-md-8 mb-5">
-        <ul class="list-group">
-          <li
-            *ngFor="let movie of movies"
-            class="list-group-item border-0 mb-3 ps-0"
-          >
-            <div class="d-flex">
-              <img
-                class="me-4"
-                src="{{ movie.imageUrl }}"
-                alt="{{ movie.title }}"
-              />
-              <div class="d-flex flex-column justify-content-around">
-                <h2 class="display-6 fw-normal">{{ movie.title }}</h2>
-                <p>
-                  {{ movie.description }}
-                </p>
-                <a
-                  class="btn btn-outline-success rounded-5"
-                  (click)="clickLike(movie)"
-                  >Like
-                </a>
-              </div>
+<div class="container">
+  <div class="row justify-content-start">
+    <h3 class="text-start my-3 display-5 text-white">I Nostri Titoli</h3>
+    <div class="col-12 col-md-8 mb-5">
+      <ul class="list-group">
+        <li
+          *ngFor="let movie of movies"
+          class="list-group-item border-0 mb-3 ps-0"
+        >
+          <div class="d-flex">
+            <img
+              class="me-4"
+              src="{{ movie.imageUrl }}"
+              alt="{{ movie.title }}"
+            />
+            <div class="d-flex flex-column justify-content-around">
+              <h2 class="display-6 fw-normal">
+                {{ movie.title }}
+              </h2>
+              <p>{{ movie.year }}</p>
+              <p>
+                {{ movie.description }}
+              </p>
+              <a
+                class="btn btn-outline-success rounded-5"
+                (click)="clickLike(movie)"
+                >Like
+              </a>
             </div>
-          </li>
-        </ul>
-      </div>
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
